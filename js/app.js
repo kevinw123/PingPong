@@ -1,3 +1,4 @@
 $(function(){
-	alert("Welcome to the Ping Pong battle.");
+	$("#paddleB").css("top", "20px");
+	$("#paddleA").css("top", "60px");
 });
