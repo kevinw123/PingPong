@@ -11,23 +11,26 @@
 
 <body>
 	<header>
-		<h1 align="center">Soccer Pong</h1>
+		<h1 align="center" id="title">Soccer Pong</h1>
 	</header>
 	<!--div align="center" id="scoreboard">
 		<div class="score">Player A: <span id="scoreA">0</span></div>
 		<div class="score">Player B: <span id="scoreB">0</span></div>
 	</div-->
 	<div align="center" class="container-fluid" id="scoreboard">
-		<div class="text-left">Player A:</div>
-		<div class="text-right">Player B:</div>
+		<div id="player">
+				<p class="alignleft">Player A</p>
+				<p class="alignright">Player B</p>
+				<div style="clear: both;"></div>
+		</div>
 		<br>
-		<div class="text-left">
-        	<span id="scoreA">0</span>
-        </div>
-        <div class="text-right">
-        	<span id="scoreB">0</span>
+		<div id="number">
+			<div class="textleft"><span id="scoreA">0</span></div>
+	        <div class="textright"><span id="scoreB">0</span></div>
+	        <div style="clear: both;"></div>
         </div>
     </div>
+    <br>
 	<div align="center" id="game">
 		<div id="playground">
 			<div id="paddleA" class="paddle"></div>
@@ -37,3 +40,4 @@
 	</div>
 </body>
 </html>
+

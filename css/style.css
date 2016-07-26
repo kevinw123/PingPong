@@ -6,12 +6,42 @@
 	overflow: hidden;
 }
 
+#title
+{
+	font-style: bold;
+	font-size: 75px;
+	font-family: "Cambria";
+}
+
+.alignleft {
+	float: left;
+	font-style: bold;
+	font-size: 20px;
+}
+.alignright {
+	float: right;
+	font-style: bold;
+	font-size: 20px;
+}
+
+.textleft {
+	float: left;
+	font-style: bold;
+	font-size: 20px;
+}
+.textright {
+	float: right;
+	font-style: bold;
+	font-size: 20px;
+}
+
 #scoreboard {
   color: #F8F8F2;
-  background-color: #1EC3C3;
+  /*background-color: #1EC3C3;*/
+  background: linear-gradient(90deg, red 50%, blue 50%);
   border-radius: 10px;
   width: 400px;
-  height: 100px;
+  height: 90px;
 }
 
 #ball{
