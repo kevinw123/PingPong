@@ -5,7 +5,10 @@ var KEY = {
 	S: 83
 };
 
-var pingpong = {}
+var pingpong = {
+	scoreA : 0,
+	scoreB : 0
+}
 pingpong.pressedKeys = [];
 
 pingpong.ball ={
@@ -61,6 +64,8 @@ function moveBall(){
 			"top":ball.y
 		});
 		ball.directionX = -1;
+		pingpong.scoreA++;
+		$("#scoreA").html(pingpong.scoreA);
 	}
 	//left edge
 	if(ball.x + ball.speed*ball.directionX < 0)
@@ -73,6 +78,8 @@ function moveBall(){
 			"top":ball.y
 		});
 		ball.directionX = 1;
+		pingpong.scoreB++;
+		$("#scoreB").html(pingpong.scoreB);
 	}
 	ball.x += ball.speed * ball.directionX;
 	ball.y += ball.speed * ball.directionY;
