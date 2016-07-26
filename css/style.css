@@ -37,7 +37,6 @@
 
 #scoreboard {
   color: #F8F8F2;
-  /*background-color: #1EC3C3;*/
   background: linear-gradient(90deg, red 50%, blue 50%);
   border-radius: 10px;
   width: 400px;
@@ -45,7 +44,6 @@
 }
 
 #ball{
-	/*background:#fbb;*/
 	background-image: url(img/soccer.png);
 	position: absolute;
 	width:20px;

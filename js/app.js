@@ -9,6 +9,8 @@ var pingpong = {
 	scoreA : 0,
 	scoreB : 0
 }
+
+
 pingpong.pressedKeys = [];
 
 pingpong.ball ={
