@@ -116,22 +116,23 @@ function moveBall(){
 
 function movePaddles(){
 	// use our custom timer to continuously check if a key is pressed. 
-	if (pingpong.pressedKeys[KEY.UP]){
+	if (pingpong.pressedKeys[KEY.UP] && !(parseInt($("#paddleB").css("top")) < 0)){
 		// move the paddle B up 5 pixels
 		var top = parseInt($("#paddleB").css("top"));
 		$("#paddleB").css("top",top-5);	
 	}
-	if (pingpong.pressedKeys[KEY.DOWN]){
+	if (pingpong.pressedKeys[KEY.DOWN] && parseInt($("#paddleB").css("top")) < (parseInt($("#playground").height()) - 60)){
 		// move the paddle B down 5 pixels
 		var top = parseInt($("#paddleB").css("top"));
 		$("#paddleB").css("top",top+5);
+		//console.log(parseInt($("#paddleB").css("top")));
 	}
-	if (pingpong.pressedKeys[KEY.W]){
+	if (pingpong.pressedKeys[KEY.W] && !(parseInt($("#paddleA").css("top")) < 0)){
 		// move the paddle A up 5 pixels
 		var top = parseInt($("#paddleA").css("top"));
 		$("#paddleA").css("top",top-5);
 	}
-	if (pingpong.pressedKeys[KEY.S]){
+	if (pingpong.pressedKeys[KEY.S] && parseInt($("#paddleA").css("top")) < (parseInt($("#playground").height()) - 60) ){
 		// move the paddle A down 5 pixels
 		var top = parseInt($("#paddleA").css("top"));
 		$("#paddleA").css("top",top+5);			
