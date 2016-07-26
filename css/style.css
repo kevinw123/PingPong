@@ -1,6 +1,5 @@
 #playground{
-	align-content: "center";
-	background: #e0ffe0;
+	background: url(img/football.jpg) no-repeat;
 	width:  400px;
 	height: 200px;
 	position: relative;
@@ -17,14 +16,16 @@
 	border-radius: 10px;
 }
 .paddle{
-	background: #bbf;
 	left: 50px;
 	top: 70px;
 	position: absolute;
 	width: 30px;
 	height: 70px;
 }
-
+#paddleA{
+	background-image: url(img/char2.png);
+}
 #paddleB{
 	left: 320px;
+	background-image: url(img/character.png);
 }
